@@ -49,6 +49,11 @@ This question is not related to the plugin and Post Types are completely describ
 
 == Screenshots ==
 
+1. Workspace
+2. New FieldSet
+3. Add Fields
+4. Edit Post
+5. Add Sets
 
 == Changelog ==
 

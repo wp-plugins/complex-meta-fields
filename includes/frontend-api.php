@@ -24,8 +24,13 @@ if ( !function_exists( 'cmf_have_meta' ) ) {
     if ( !isset( $wp_query->post->cmf[$meta_key] ) ) {
       if ( !empty( $meta_key ) && is_string( $meta_key ) ) {
         if ( !empty( $wp_query->post ) && !empty( $wp_query->post->ID ) ) {
-          $wp_query->post->cmf[$meta_key] = get_post_meta( $wp_query->post->ID, $meta_key, 1 );
-          $wp_query->post->cmf[$meta_key.'_current'] = key($wp_query->post->cmf[$meta_key]);
+          $_post_meta = get_post_meta( $wp_query->post->ID, $meta_key, 1 );
+          if ( !empty( $_post_meta ) ) {
+            $wp_query->post->cmf[$meta_key] = $_post_meta;
+            $wp_query->post->cmf[$meta_key.'_current'] = key($wp_query->post->cmf[$meta_key]);
+          } else {
+            return false;
+          }
         }
       }
     }
