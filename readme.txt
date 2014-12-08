@@ -1,7 +1,7 @@
 === Complex Meta Fields ===
 Contributors:      Anton Korotkoff
 Donate link:       http://eney-solutions.com.ua/complex-meta-fields
-Tags:              post, meta, fields, complex, multiple, repeatable, post type
+Tags:              post, meta, fields, complex, multiple, post type, custom fields, metadata
 Requires at least: 4.0
 Tested up to:      4.0.1
 Stable tag:        1.0.2
