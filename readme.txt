@@ -1,10 +1,10 @@
 === Complex Meta Fields ===
 Contributors:      Anton Korotkoff
 Donate link:       http://eney-solutions.com.ua/complex-meta-fields
-Tags:              post, meta, fields, complex, multiple, post type, custom fields, metadata
+Tags:              post, meta, fields, multiple, repeat, post type, custom fields, metadata
 Requires at least: 4.0
 Tested up to:      4.0.1
-Stable tag:        1.0.2
+Stable tag:        1.0.3
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,13 @@ Manage complex meta data for any post type.
 
 == Description ==
 
+You may notice there are a lot of plugins that do almost the same things as this one. But there always is a small difference.
 
+In current case plugin allows to add REPEATABLE field sets for any Post Type. Meaning you can add any amount of the same field sets to a post or page while editing it.
+
+Then you can output them in a post loop using built-in API.
+
+Moreover, it is light, simple and useful in the same time.
 
 == Installation ==
 
@@ -57,6 +63,9 @@ This question is not related to the plugin and Post Types are completely describ
 
 == Changelog ==
 
+= 1.0.3 =
+* Added new field types
+
 = 1.0.2 =
 * Added ru_RU localization
 
@@ -73,6 +82,9 @@ This question is not related to the plugin and Post Types are completely describ
 * First release
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+* Added new field types
 
 = 1.0.0 =
 First public release

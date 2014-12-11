@@ -107,7 +107,7 @@
 .metabox .fieldset .field {
   margin-bottom: 25px;
 }
-.metabox .fieldset .field input[type="text"],
+.metabox .fieldset .field input,
 .metabox .fieldset .field textarea,
 .metabox .fieldset .field select {
   width: 100%;
