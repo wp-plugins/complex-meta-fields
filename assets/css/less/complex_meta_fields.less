@@ -1,0 +1,160 @@
+/**
+ * Complex Meta Fields
+ * http://eney.solutions/complex-meta-fields
+ *
+ * Copyright (c) 2014 Anton Korotkov
+ * Licensed under the GPLv2+ license.
+ */
+
+#cmf-fields-managed {
+
+  table {
+    tr {
+
+      > td {
+        padding-right: 25px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+    }
+  }
+
+  .field-set-list {
+
+    .nothing-yet, .loading {
+      border: 1px dashed #ddd;
+      background: white;
+      padding: 25px;
+
+      img {
+        display: block;
+        float: left;
+        margin-right: 20px;
+      }
+    }
+
+    .field-set-item {
+      background: none repeat scroll 0 0 white;
+      border: 1px solid #dddddd;
+      border-radius: 3px;
+      box-shadow: 1px 1px 3px #ddd;
+      padding: 25px;
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        cursor: pointer;
+        float: left;
+        line-height: 25px;
+        color: #0074A2;
+      }
+
+      .remove-field-set {
+        float: right;
+      }
+
+      .expandable {
+        padding-top: 15px;
+
+        > table {
+          margin-top: 25px;
+
+          tr {
+
+            td {
+
+              &.left {
+                padding-right: 25px;
+                border-right: 1px solid #dddddd;
+
+                input, select {
+                  width: 100%;
+                }
+              }
+
+              &.right {
+                padding-left: 25px;
+              }
+
+              p {
+                margin-top: 0;
+                margin-bottom: 10px;
+              }
+
+              .field-item {
+                background: none repeat scroll 0 0 #FAFAFA;
+                border: 1px solid #dddddd;
+                border-radius: 3px;
+                margin-bottom: 5px;
+                padding: 20px;
+                box-shadow: 1px 1px 1px #eee;
+
+                table {
+
+                  tr {
+
+                    td {
+
+                      padding-right: 25px;
+
+                      &:last-child {
+                        padding-right: 0;
+                      }
+
+                      input[type="text"], select, textarea {
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+
+                .remove-field {
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  a.active {
+    color: red;
+  }
+  
+  .api-functions {
+    background: none repeat scroll 0 0 white;
+    padding: 20px;
+    
+    li {
+      padding-top: 10px;
+      &+li {
+        border-top: 1px solid #f3f3f3;
+      }
+    }
+  }
+}
+
+
+.metabox {
+  
+  .fieldset {
+    background: none repeat scroll 0 0 #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #ddd;
+    padding: 25px;
+    
+    .field {
+      margin-bottom: 25px;
+      
+      input, textarea, select { 
+        width: 100%;
+      }
+    }
+  }
+}

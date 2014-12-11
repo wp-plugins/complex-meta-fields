@@ -1,0 +1,26 @@
+{
+  "name": "complex-meta-fields",
+  "title": "Complex Meta Fields",
+  "description": "Manage complex meta data for any post type.",
+  "version": "1.0.3",
+  "homepage": "http://eney-solutions.com.ua/complex-meta-fields",
+  "author": {
+    "name": "Anton Korotkov",
+    "email": "anton@eney-solutions.com.ua",
+    "url": "http://eney-solutions.com.ua"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.1.2",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-contrib-less": "~0.5.0"
+  },
+  "keywords": []
+}
