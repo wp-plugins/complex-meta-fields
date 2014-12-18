@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Complex Meta Fields\n"
-"POT-Creation-Date: 2014-12-11 00:53+0200\n"
-"PO-Revision-Date: 2014-12-11 00:53+0200\n"
+"POT-Creation-Date: 2014-12-18 23:57+0200\n"
+"PO-Revision-Date: 2014-12-18 23:57+0200\n"
 "Last-Translator: Anton Korotkoff <anton@eney-solutions.com.ua>\n"
 "Language-Team: ENEY Solutions <anton@eney-solutions.com.ua>\n"
 "Language: ru_RU\n"
@@ -18,27 +18,40 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 
-#: includes/class-cmf.php:79
+#: includes/class-cmf-ajax.php:44
+msgid "Attachment ID is not presented"
+msgstr "Attachment ID не определен"
+
+#: includes/class-cmf.php:84
 msgid "Sure?"
 msgstr "Уверены?"
 
-#: includes/class-cmf.php:116
+#: includes/class-cmf.php:87
+msgid "Attachment ID"
+msgstr "ID прикрепления"
+
+#: includes/class-cmf.php:88
+msgid "Select"
+msgstr "Выбрать"
+
+#: includes/class-cmf.php:89
+msgid "Remove"
+msgstr "Удалить"
+
+#: includes/class-cmf.php:209
 msgid "Complex Meta Fields Welcome"
 msgstr "Complex Meta Fields Приветствие"
 
-#: includes/class-cmf.php:116
-msgid "CMF"
-msgstr "CMF"
-
-#: includes/class-cmf.php:117 includes/class-cmf.php:118
+#: includes/class-cmf.php:209 includes/class-cmf.php:210
+#: includes/class-cmf.php:211
 msgid "Complex Meta Fields"
 msgstr "Complex Meta Fields"
 
-#: includes/class-cmf.php:117
+#: includes/class-cmf.php:210
 msgid "Welcome"
 msgstr "Приветствие"
 
-#: includes/class-cmf.php:118
+#: includes/class-cmf.php:211
 msgid "Manage"
 msgstr "Управление"
 
@@ -142,27 +155,31 @@ msgstr "Сложные"
 msgid "Editor"
 msgstr "Редактор"
 
-#: includes/templates/manage-page.php:172
+#: includes/templates/manage-page.php:152
+msgid "Image"
+msgstr "Изображение"
+
+#: includes/templates/manage-page.php:173
 msgid "Options"
 msgstr "Варианты"
 
-#: includes/templates/manage-page.php:200
+#: includes/templates/manage-page.php:201
 msgid "Add Option"
 msgstr "Добавить"
 
-#: includes/templates/manage-page.php:219
+#: includes/templates/manage-page.php:220
 msgid "New FieldSet"
 msgstr "Новый набор"
 
-#: includes/templates/manage-page.php:221
+#: includes/templates/manage-page.php:222
 msgid "Save All"
 msgstr "Сохранить все"
 
-#: includes/templates/manage-page.php:234
+#: includes/templates/manage-page.php:235
 msgid "Help"
 msgstr "Помощь"
 
-#: includes/templates/manage-page.php:236
+#: includes/templates/manage-page.php:237
 msgid ""
 "Hi there! This section allows you to manage your FieldSets and Fields for "
 "different Post Types."
@@ -170,40 +187,40 @@ msgstr ""
 "Привет! Эта секция поможет вам настроить ваши наборы полей для разных типов "
 "записей."
 
-#: includes/templates/manage-page.php:239
-#: includes/templates/manage-page.php:249
+#: includes/templates/manage-page.php:240
+#: includes/templates/manage-page.php:250
 msgid "Why this plugin?"
 msgstr "Почему этот плагин?"
 
-#: includes/templates/manage-page.php:240
-#: includes/templates/manage-page.php:257
+#: includes/templates/manage-page.php:241
+#: includes/templates/manage-page.php:258
 msgid "What is FieldSet?"
 msgstr "Что такое Набор полей?"
 
-#: includes/templates/manage-page.php:241
-#: includes/templates/manage-page.php:263
+#: includes/templates/manage-page.php:242
+#: includes/templates/manage-page.php:264
 msgid "What is Field?"
 msgstr "Что такое поле?"
 
-#: includes/templates/manage-page.php:242
-#: includes/templates/manage-page.php:268
+#: includes/templates/manage-page.php:243
+#: includes/templates/manage-page.php:269
 msgid "What is Post Type?"
 msgstr "Что такое Тип записи"
 
-#: includes/templates/manage-page.php:243
-#: includes/templates/manage-page.php:273 includes/templates/root-page.php:48
+#: includes/templates/manage-page.php:244
+#: includes/templates/manage-page.php:274 includes/templates/root-page.php:48
 msgid "Front-end API"
 msgstr "Фронтенд API"
 
-#: includes/templates/manage-page.php:244
+#: includes/templates/manage-page.php:245
 msgid "Support"
 msgstr "Поддержка"
 
-#: includes/templates/manage-page.php:245
+#: includes/templates/manage-page.php:246
 msgid "More about plugin"
 msgstr "Больше о плагине"
 
-#: includes/templates/manage-page.php:250
+#: includes/templates/manage-page.php:251
 msgid ""
 "You may notice there are a lot of plugins that do almost the same things as "
 "this one. But there always is a small difference."
@@ -211,7 +228,7 @@ msgstr ""
 "Можно заметить, что плагинов, которые делают почти тоже самое, очень много. "
 "Но всегда есть небольшие отличия."
 
-#: includes/templates/manage-page.php:251
+#: includes/templates/manage-page.php:252
 msgid ""
 "In current case plugin allows to add REPEATABLE field sets for any Post "
 "Type. Meaning you can add any amount of the same field sets to a post or "
@@ -221,15 +238,15 @@ msgstr ""
 "любых типов записей. Имеется ввиду, что вы можете добавить любое количество "
 "одинаковых наборов полей в запись или страницу во время редактирования."
 
-#: includes/templates/manage-page.php:252
+#: includes/templates/manage-page.php:253
 msgid "Then you can output them in a post loop using built-in API."
 msgstr "После этого вы сможете выводить их цикле постов, используя API."
 
-#: includes/templates/manage-page.php:253
+#: includes/templates/manage-page.php:254
 msgid "Moreover, it is light, simple and useful in the same time."
 msgstr "Более того, плагин легкий, простой и полезный в то же время."
 
-#: includes/templates/manage-page.php:258
+#: includes/templates/manage-page.php:259
 msgid ""
 "FieldSet is simply a set of fields that you are going to use while editing "
 "posts. FieldSet may consist of any amount of fields inside and may be "
@@ -240,7 +257,7 @@ msgstr ""
 "количества полей внутри и может быть добавлен много раз, чтобы добавить "
 "несколько объектов в запись или страницу."
 
-#: includes/templates/manage-page.php:259
+#: includes/templates/manage-page.php:260
 msgid ""
 "When creating new FieldSet you will need to provide Name and select a post "
 "type to specify where you want this FieldSet to be used. FieldSet Slug is "
@@ -252,7 +269,7 @@ msgstr ""
 "набора полей используется при выводе данных на фронтенд и генерируется "
 "автоматически. См. <b>Фронтенд API</b>."
 
-#: includes/templates/manage-page.php:264
+#: includes/templates/manage-page.php:265
 msgid ""
 "There is nothing special about Fields. It is simply html inputs of different "
 "types inside a FieldSets. There are some predefined types for common use. "
@@ -262,7 +279,7 @@ msgstr ""
 "Набора полей. Сейчас доступны несколько типов для базового использования. "
 "Скоро будет больше!"
 
-#: includes/templates/manage-page.php:269
+#: includes/templates/manage-page.php:270
 msgid ""
 "This question is not related to the plugin and Post Types are completely "
 "described here: "
@@ -270,7 +287,7 @@ msgstr ""
 "Этот вопрос не относится к плагину. Вся информация о типах записей "
 "предоставлена тут:"
 
-#: includes/templates/manage-page.php:274
+#: includes/templates/manage-page.php:275
 msgid ""
 "Plugin has simple API for front-end that helps to work with FieldSets and "
 "Fields inside them."
@@ -278,15 +295,15 @@ msgstr ""
 "Плагин имеет простой API для фронтенда, который поможет вывести наборы полей "
 "для отображения."
 
-#: includes/templates/manage-page.php:275
+#: includes/templates/manage-page.php:276
 msgid "It works the way similar to standard post loop."
 msgstr "Принцип работы похож на стандартный Post Loop."
 
-#: includes/templates/manage-page.php:276
+#: includes/templates/manage-page.php:277
 msgid "<b>API Functions</b>"
 msgstr "<b>API Функции</b>"
 
-#: includes/templates/manage-page.php:281
+#: includes/templates/manage-page.php:282
 msgid ""
 "An alias of <code>have_posts()</code> function. Need to use inside "
 "<code>have_posts()</code> loop. Returns true if there are FieldSets left "
@@ -298,7 +315,7 @@ msgstr ""
 "полей, с которыми можно работать. Принимает 1 аргумент в виде Слага набора, "
 "который вы можете найти при создании нового Набора полей."
 
-#: includes/templates/manage-page.php:285
+#: includes/templates/manage-page.php:286
 msgid ""
 "An alias of <code>the_post()</code> function. Need to use inside "
 "<code>cmf_have_meta()</code> loop. Sets current FieldSet. Accepts one "
@@ -309,7 +326,7 @@ msgstr ""
 "для работы. Принимает 1 аргумент в виде Слага набора, который вы можете "
 "найти при создании нового Набора полей."
 
-#: includes/templates/manage-page.php:289
+#: includes/templates/manage-page.php:290
 msgid ""
 "Function that actually prints field's value. Accepts one agrument that is "
 "Field Slug which you can find when creating new Field in some of the "
@@ -318,11 +335,11 @@ msgstr ""
 "Функция, которая печатает значение поля. Принимает 1 аргумент в виде Слага "
 "Поля, который вы можете найти при создании нового Поля в одном из Наборов."
 
-#: includes/templates/manage-page.php:290
+#: includes/templates/manage-page.php:291
 msgid "Notice!"
 msgstr "Важно!"
 
-#: includes/templates/manage-page.php:290
+#: includes/templates/manage-page.php:291
 msgid ""
 "The value for field of type checkbox will be Array, so there is no need to "
 "use this function for this kind of type. Use "
@@ -332,7 +349,7 @@ msgstr ""
 "необходимости использовать эту функцию для данного типа. Используйте "
 "<code>cmf_get_field( $field_slug )</code>."
 
-#: includes/templates/manage-page.php:294
+#: includes/templates/manage-page.php:295
 msgid ""
 "Function does the same as function above but returns value instead of "
 "printing. You are free to get the value of the field and do any "
@@ -344,7 +361,7 @@ msgstr ""
 "манипуляции с ним, а потом использовать. Принимает 1 аргумент в виде Слага "
 "Поля, который вы можете найти при создании нового Поля в одном из Наборов."
 
-#: includes/templates/manage-page.php:298
+#: includes/templates/manage-page.php:299
 msgid ""
 "If you need more custom things done with FieldSets then you always can use "
 "function <code>get_post_meta($post_id, $fieldset_slug)</code> to get "
@@ -354,11 +371,11 @@ msgstr ""
 "получить к ним доступ с помощью функции <code>get_post_meta($post_id, "
 "$fieldset_slug)</code> в любом месте вашего кода."
 
-#: includes/templates/manage-page.php:300
+#: includes/templates/manage-page.php:301
 msgid "<b>Very important!</b>"
 msgstr "<b>Очень важно!</b>"
 
-#: includes/templates/manage-page.php:302
+#: includes/templates/manage-page.php:303
 msgid ""
 "Always do <code>cmf_the_meta( $fieldset_slug )</code> inside cmf_have_meta "
 "loop in order to prevent infinite loop on your post page."
@@ -450,3 +467,6 @@ msgid ""
 msgstr ""
 "Пожалуйста посетите страницу документации плагина и полезные статьи. "
 "Оценивайте, обсуждайте, комментируйте и обращайтесь за помощью."
+
+#~ msgid "CMF"
+#~ msgstr "CMF"

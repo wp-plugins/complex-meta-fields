@@ -1,4 +1,4 @@
-/*! Complex Meta Fields - v1.0.3
+/*! Complex Meta Fields - v1.0.4
  * http://eney-solutions.com.ua/complex-meta-fields
  * Copyright (c) 2014; * Licensed GPLv2+ */
 (function (window, undefined) {
@@ -144,17 +144,19 @@
   })
   
   //** Create Controller for MetaBox */
-  .controller( 'cmfMetaBox', function( $scope ){
+  .controller( 'cmfMetaBox', function( $scope, $http ){
     
     //** Templates URL */
     $scope.templates_url = cmfL10N.templates_url;
+    
+    //** Localization for this controller */
+    $scope.l10n = cmfL10N.cmfMetaBox; 
     
     //** Fields Collection */
     $scope.fieldsets = [];
     
     //** Init function */
     $scope.initialize = function( args, template ) {
-      console.log( args );
       $scope._filterFormat(args);
       $scope.template = template;
       $scope.fieldsets = args;
@@ -186,7 +188,56 @@
           }
         }
       }
-    }
+    };
+    
+    /**
+     * Add image field
+     * 
+     * @param {type} args
+     * @returns {undefined}
+     */
+    $scope.selectImage = function() {
+      
+      var that = this;
+      
+      //** Create image selector UI */
+      var fileFrame = wp.media.frames.file_frame = wp.media({
+        multiple: false
+      });
+      
+      //** When image selected */
+      fileFrame.on('select', function () {
+        var url = fileFrame.state().get('selection').first().toJSON();
+        that.field.value = url.id;
+        that.field.thumb = url.sizes.thumbnail.url;
+        $scope.$apply();
+      });
+      
+      //** Open to be able to select image */
+      fileFrame.open();
+    };
+    
+    /**
+     * Remove image
+     * @returns {undefined}
+     */
+    $scope.removeImage = function() {
+      this.field.value = null;
+      this.field.thumb = null;
+    };
+    
+    /**
+     * Init image field
+     * @returns {undefined}
+     */
+    $scope.initImage = function() {
+      var that = this;
+      $http.get( ajaxurl + '?action=cmf_get_attachment_thumbnail&id='+this.field.value ).success(function(data) {
+        if ( data.success ) {
+          that.field.thumb = data.data;
+        }
+      });
+    };
     
   });
 
