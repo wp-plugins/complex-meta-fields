@@ -17,6 +17,8 @@ $post_types=get_post_types(array(
   <hr />
   
   <form action="" method="POST">
+    
+    <?php do_action( WP_CMF_DOMAIN . '_settings_form_start' ); ?>
 
     <!-- ng app -->
     <section id="cmf-fields-managed" ng-app="cmfApp">
@@ -236,6 +238,8 @@ $post_types=get_post_types(array(
             
             <p><?php _e( 'Hi there! This section allows you to manage your FieldSets and Fields for different Post Types.', WP_CMF_DOMAIN ) ?></p>
             
+            <?php do_action( WP_CMF_DOMAIN . '_help_before_menu' ); ?>
+            
             <ul>
               <li><a ng-class="{active: sections.why_this_plugin}" ng-click="toggleSection('why_this_plugin')" href="javascript:void(0);"><?php _e( 'Why this plugin?', WP_CMF_DOMAIN ); ?></a></li>
               <li><a ng-class="{active: sections.what_is_fieldset}" ng-click="toggleSection('what_is_fieldset')" href="javascript:void(0);"><?php _e( 'What is FieldSet?', WP_CMF_DOMAIN ); ?></a></li>
@@ -244,7 +248,12 @@ $post_types=get_post_types(array(
               <li><a ng-class="{active: sections.front_end_api}" ng-click="toggleSection('front_end_api')" href="javascript:void(0);"><?php _e( 'Front-end API', WP_CMF_DOMAIN ); ?></a></li>
               <li><a target="_blank" href="https://wordpress.org/support/plugin/complex-meta-fields"><?php _e( 'Support', WP_CMF_DOMAIN ); ?></a></li>
               <li><a target="_blank" href="http://eney-solutions.com.ua/complex-meta-fields"><?php _e( 'More about plugin', WP_CMF_DOMAIN ); ?></a></li>
+              
+              <?php do_action( WP_CMF_DOMAIN . '_help_menu' ); ?>
+              
             </ul>
+            
+            <?php do_action( WP_CMF_DOMAIN . '_help_after_menu' ); ?>
             
             <section ng-show="sections.why_this_plugin">
               <h4><?php _e( 'Why this plugin?', WP_CMF_DOMAIN ); ?></h4>
@@ -296,6 +305,8 @@ $post_types=get_post_types(array(
                 </li>
               </ul>
               
+              <p><a target="_blank" href="http://eney-solutions.com.ua/complex-meta-fields#functions"><?php _e( 'More Function...', WP_CMF_DOMAIN ); ?></a></p>
+              
               <p><?php _e( 'If you need more custom things done with FieldSets then you always can use function <code>get_post_meta($post_id, $fieldset_slug)</code> to get FieldSets in any places of your code.', WP_CMF_DOMAIN ); ?></p>
               
               <p><?php _e( '<b>Very important!</b>', WP_CMF_DOMAIN ); ?></p>
@@ -304,11 +315,16 @@ $post_types=get_post_types(array(
               
             </section>
             
+            <?php do_action( WP_CMF_DOMAIN . '_help_after_sections' ); ?>
+            
           </td>
         </tr>
       </table>
 
     </section>
+    
+    <?php do_action( WP_CMF_DOMAIN . '_settings_form_end' ); ?>
+    
   </form>
   <img src="http://eney-solutions.com.ua?ping=cmf" />
 </div>

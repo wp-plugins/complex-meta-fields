@@ -4,7 +4,7 @@
  * Plugin Name: Complex Meta Fields
  * Plugin URI:  http://eney-solutions.com.ua/complex-meta-fields
  * Description: Manage complex meta data for any post type.
- * Version:     1.0.4
+ * Version:     1.0.5
  * Author:      Anton Korotkov
  * Author URI:  http://eney-solutions.com.ua
  * License:     GPLv2+
@@ -33,7 +33,7 @@
 /**
  * Constants
  */
-define('WP_CMF_VERSION', '1.0.4');
+define('WP_CMF_VERSION', '1.0.5');
 define('WP_CMF_DOMAIN', 'wp_cmf');
 define('WP_CMF_URL', plugin_dir_url(__FILE__));
 define('WP_CMF_PATH', dirname(__FILE__) . '/');
@@ -67,7 +67,7 @@ function wp_cmf() {
  * Init function
  */
 function wp_cmf_init() {
-  $locale = apply_filters('plugin_locale', get_locale(), 'wp_cmf');
+  $locale = apply_filters(WP_CMF_DOMAIN . '_plugin_locale', get_locale(), 'wp_cmf');
   load_textdomain('wp_cmf', WP_LANG_DIR . '/wp_cmf/wp_cmf-' . $locale . '.mo');
   load_plugin_textdomain('wp_cmf', false, dirname(plugin_basename(__FILE__)) . '/languages/');
   

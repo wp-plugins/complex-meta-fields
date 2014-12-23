@@ -30,7 +30,7 @@ namespace ENEYSolutions\CMF {
     public function construct() {
       
       //** Get current fieldsets */
-	  $_ = get_option( WP_CMF_OPTION );
+	  $_ =  apply_filters( WP_CMF_DOMAIN . '_metabox_get_fieldsets', get_option( WP_CMF_OPTION ) );
       $fieldSets = !empty( $_ ) ? $_ : array();
       
       //** For each field set create metabox */
@@ -112,6 +112,8 @@ namespace ENEYSolutions\CMF {
           update_post_meta($post_id, $meta_key, $meta_value);
         }
       }
+      
+      do_action( WP_CMF_DOMAIN . '_after_save_post', $post_id );
     }
 
     /**

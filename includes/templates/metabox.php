@@ -9,7 +9,10 @@
  
 ?>
 
+<?php do_action( WP_CMF_DOMAIN . '_metabox_before_content', $__, $_ ); ?>
+
 <div class="metabox" ng-controller="cmfMetaBox">
+  
   <ul ng-init='initialize(<?php echo json_encode( !empty( $_ ) ? $_ : array() ) ?>, <?php echo json_encode( !empty( $__ ) ? $__ : array() ) ?>)'>
     
     <li class="fieldset" ng-repeat="fieldset in fieldsets">
@@ -37,3 +40,4 @@
   
 </div>
 
+<?php do_action( WP_CMF_DOMAIN . '_metabox_after_content', $__ );
