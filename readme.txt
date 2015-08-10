@@ -3,7 +3,7 @@ Contributors:      Anton Korotkoff
 Donate link:       http://eney-solutions.com.ua/complex-meta-fields
 Tags:              post, meta, fields, multiple, repeat, post type, custom fields, metadata
 Requires at least: 3.6
-Tested up to:      4.1
+Tested up to:      4.3
 Stable tag:        1.0.5
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
